@@ -1,0 +1,29 @@
+
+
+<h1>Calculator</h1>
+
+
+<input type="text" id="value-one" />
+<input type="text" id="value-two" />
+<button id="cal-butt">Calculate</button>
+
+
+<div class="answer">
+  Answer: <span id="answer"></span>
+</div>
+
+<script>
+
+var numOne = document.getElementById("value-one");
+var numTwo = document.getElementById("value-two");
+var calButton = document.getElementById("cal-butt");
+var resultsDiv = document.getElementById("answer");
+
+function add(){
+  var i = (Number(numOne.value) + Number(numTwo.value))
+  resultsDiv.innerHTML = i;
+}
+
+calButton.addEventListener('click', add);
+
+</script>
